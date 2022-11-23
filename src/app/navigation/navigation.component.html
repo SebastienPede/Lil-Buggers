@@ -1,0 +1,143 @@
+
+<div class="w-100 d-flex flex-row justify-content-between align-items-center py-1 px-4 position-fixed top-0 LBBlueBG shadow-lg text-white" style="z-index: 1000;">
+
+    <div style="max-width: 150px;">
+    
+        <img class="img-fluid" src="assets/Branding/lilbuggersLOGO.png" alt="">
+
+    </div>
+
+    <div class="d-flex flex-row">
+
+        <h2 class="navText navLink mx-3" routerLinkActive="activeLink" routerLink="home">Acceuil</h2>
+        <h2 class="navText navLink mx-3" routerLinkActive="activeLink" routerLink="catalog">Catalog</h2>
+        <h2 class="navText navLink mx-3" routerLinkActive="activeLink" routerLink="resources">Resources</h2>
+        <h2 class="navText navLink mx-3" routerLinkActive="activeLink" routerLink="contact">Contact</h2>
+        <h2 class="navText navLink mx-3" routerLinkActive="activeLink" routerLink="checkout">Checkout</h2>
+
+
+    </div>
+
+    <div class="d-flex flex-row justify-content-end align-items-center w-100" style="max-width: 150px">
+
+        <fa-icon [icon]="faUser" class="mx-3 navLink"  style="color: white; font-size: 2rem;" ></fa-icon>
+
+        <div class="position-relative" *ngIf="userCart | async as products">
+
+            <fa-icon [icon]="faShoppingCart" class="mx-3 navLink" (click)="toggleCartPanel()"  style="color: white; font-size: 2rem;" ></fa-icon>
+
+            <span class="position-absolute translate-middle badge rounded-pill bg-danger" style="top: 5px; right: -10px;">
+                {{products.length}}
+            </span>
+
+        </div>
+        
+
+            
+        
+            
+
+        
+
+    </div>
+
+
+</div>
+
+
+
+<!--Cart Panel-->
+
+<div *ngIf="cart_panel_open" class="d-flex flex-column justify-content-start align-items-center p-4 position-fixed top-0 end-0 h-100 w-100 shadow-lg" style="background-color: white; z-index:1001 ; max-width: 400px;">
+
+    <div class="d-flex flex-row justify-content-between w-100 mb-5">
+
+        <h3 class="Carter smallTitle">Votre panier</h3>
+
+        <fa-icon [icon]="faTimes" class="mx-3 navLink" (click)="toggleCartPanel()"  style=" font-size: 2rem;" ></fa-icon>
+
+        
+
+    </div>
+
+
+    <div class="w-100" *ngIf="userCart | async as products">
+
+        <div class="d-flex flex-row justify-content-between align-items-center w-100 border border-5 p-3 mb-3 position-relative" *ngFor="let product of products">
+
+            <div class="d-flex flex-row justify-content-center align-items-center">
+    
+                <div class="me-3" style="max-width:75px">
+            
+                    <img class="img-fluid" src="{{product.product_image}}" alt="">
+        
+                </div>
+        
+                <div class="d-flex flex-column justify-content-center align-items-start">
+        
+                    <h3 class="text Carter">{{product.name}}</h3>
+    
+                    <h4 class="text mb-3">{{product.price}}$</h4>
+    
+                    <h5 class="text">Sous-total :</h5>
+        
+                </div>
+    
+    
+            </div>
+    
+    
+            <div class="d-flex flex-column justify-content-start align-items-end h-100">
+    
+                <h3 class="text Carter">QTY</h3>
+    
+                <h4 class="text mb-3">{{product.product_qty}}</h4>
+    
+                <h3 class="text Carter">{{ (product.product_qty!) * (product.price) | number: '1.2-2'}} $</h3>
+
+
+            </div>
+
+            <span class="position-absolute translate-middle badge rounded-pill bg-danger navLink start-100" style="top: 0; " (click)="removeFromCart(product)">
+                
+                <fa-icon [icon]="faMinus"  style="color: white; font-size: 1.4rem;" ></fa-icon>
+
+            </span>
+    
+    
+        </div>
+
+        <div class="d-flex flex-row justify-content-center align-items-center w-100" *ngIf="products.length == 0">
+
+            <h2 class="mediumText">Votre panier est vide</h2>
+
+        </div>
+
+
+        <div class="d-flex flex-row justify-content-between  w-100 mt-5 position-relative" *ngIf="products.length !== 0">
+
+            <div class="d-flex flex-column justify-content-start align-items-center h-100">
+
+                <h2 class="text Carter">Total du panier :</h2>
+
+            </div>
+
+            <div class="d-flex flex-column justify-content-start align-items-end h-100">
+
+                <h2 class="text Carter mb-3">{{calculateCartTotal(products) | number: '1.2-2'}}$ </h2>
+
+                <button class="btn btn-success btn-lg w-100  p-2" style="font-size: 1rem;" type="button" routerLink="checkout">Checkout</button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    
+
+    
+
+
+</div>

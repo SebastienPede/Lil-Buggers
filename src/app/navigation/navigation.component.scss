@@ -1,0 +1,14 @@
+.navLink{
+
+    transition: all 0.2s ease;
+
+    cursor: pointer;
+    &:hover{
+        opacity: 0.5;
+    }
+}
+
+.activeLink{
+    text-decoration: underline;
+    opacity: 0.5;
+}

@@ -1,0 +1,183 @@
+<div class="d-flex flex-column justify-content-start align-items-center pt-5" style="min-height: 200vh;" >
+
+
+    <!--Hero Banner-->
+
+    <div class="d-flex flex-row justify-content-center align-items-center my-5 px-4 w-100">
+
+        <div class="d-flex flex-column justify-content-center align-items-start w-100 my-5 heroBanner p-5 rounded-5 shadow-lg" style="max-width: 1500px;">
+    
+            <!-- <h1 class="bigTitle Carter text-white mb-4 mt-5">Lil Buggers</h1> -->
+
+            <div class="mb-5" style="max-width: 500px;">
+    
+                <img class="img-fluid mb-5" src="assets/Branding/lilbuggersLOGO.png" alt="">
+        
+            </div>
+
+            <h4 class="bigTitle text-white mb-5 " style="max-width:400px; margin-top: -200px; margin-left: 195px;">Checkout</h4>
+    
+        </div>
+    
+    </div>
+
+
+
+     <!--Votre panier-->
+     <div class="d-flex flex-column justify-content-center align-items-start w-100 position-relative mb-5 px-4" style="max-width: 1500px;">
+    
+        
+        <h1 class="title LBBlue Carter">Votre panier</h1>
+
+        <hr class="w-100 LBBlueBG my-0 mb-5 " style="height: 3px; opacity: 1; border: none;">
+
+
+        <div class="w-100 d-flex flex-column" *ngIf="userCart | async as products">
+
+            <div class="d-flex flex-row justify-content-between align-items-center w-100 border border-5 p-3 mb-3 position-relative" *ngFor="let product of products">
+    
+                <div class="d-flex flex-row justify-content-center align-items-center">
+        
+                    <div class="me-3" style="max-width:75px">
+                
+                        <img class="img-fluid" src="{{product.product_image}}" alt="">
+            
+                    </div>
+            
+                    <div class="d-flex flex-column justify-content-center align-items-start">
+            
+                        <h3 class="text Carter">{{product.name}}</h3>
+        
+                        <h4 class="text mb-3">{{product.price}}$</h4>
+        
+                        <h5 class="text">Sous-total :</h5>
+            
+                    </div>
+        
+        
+                </div>
+        
+        
+                <div class="d-flex flex-column justify-content-start align-items-end h-100">
+        
+                    <h3 class="text Carter">QTY</h3>
+        
+                    <h4 class="text mb-3">{{product.product_qty}}</h4>
+        
+                    <h3 class="text Carter">{{ (product.product_qty!) * (product.price) | number: '1.2-2'}} $</h3>
+    
+    
+                </div>
+    
+                <span class="position-absolute translate-middle badge rounded-pill bg-danger navLink start-100" style="top: 0; " (click)="removeFromCart(product)">
+                    
+                    <fa-icon [icon]="faMinus"  style="color: white; font-size: 1.4rem;" ></fa-icon>
+    
+                </span>
+        
+        
+            </div>
+    
+            <div class="d-flex flex-row justify-content-center align-items-center w-100" *ngIf="products.length == 0">
+    
+                <h2 class="mediumText text-center">Votre panier est vide. Ajoutez des produits a votre panier avant de procédez au checkout</h2>
+    
+            </div>
+    
+    
+            <div class="d-flex flex-row justify-content-between  w-100 mt-5 position-relative mb-5" *ngIf="products.length !== 0">
+    
+                <div class="d-flex flex-column justify-content-start align-items-center h-100">
+    
+                    <h2 class="smallTitle Carter">Total du panier :</h2>
+    
+                </div>
+    
+                <div class="d-flex flex-column justify-content-start align-items-end h-100">
+    
+                    <h2 class="smallTitle Carter mb-3">{{calculateCartTotal(products) | number: '1.2-2'}}$ </h2>
+    
+    
+                </div>
+    
+            </div>
+
+
+            <!--Paiement-->
+            <div class="d-flex flex-column justify-content-center align-items-start w-100 position-relative my-5" *ngIf="products.length !== 0" >
+            
+                
+                <h1 class="title LBBlue Carter">Paiement</h1>
+
+                <hr class="w-100 LBBlueBG my-0 mb-5 " style="height: 3px; opacity: 1; border: none;">
+
+
+                <div class="d-flex flex-column justify-content-center align-items-center w-100 mx-auto" style="max-width: 500px;">
+                
+                    <div class="mb-3 w-100">
+                        <label for="card_number" class="form-label">Numéro de carte crédit</label>
+                        <input type="text" class="form-control w-100" id="card_number" placeholder="0000-0000-0000-0000">
+                    </div>
+
+                    <div class="d-flex flex-row justify-content-center align-items-center position-relative w-100">
+
+                        <div class="d-flex flex-column mb-3 w-100 pe-3">
+                            <label for="exp_date" class="form-label">Expiration</label>
+                            <input type="text" class="form-control w-100" id="exp_date" placeholder="mm/yyyy">
+                        </div>
+
+                        <div class="d-flex flex-column mb-3 w-100">
+                            <label for="cvc" class="form-label">CVC</label>
+                            <input type="text" class="form-control w-100" id="cvc" placeholder="000">
+                        </div>
+
+                    </div>
+
+                    <div class="mb-3 w-100">
+                        <label for="country" class="form-label">Pays</label>
+                        <input type="text" class="form-control w-100" id="country" placeholder="Pays">
+                    </div>
+
+                    <div class="mb-4 w-100">
+                        <label for="postal_code" class="form-label">Code Postal</label>
+                        <input type="text" class="form-control w-100" id="postal_code" placeholder="XXX - XXX">
+                    </div>
+
+
+                    <button class="btn btn-primary btn-lg w-100" type="button">Soummetre</button>
+
+
+                </div>
+
+                
+
+            
+
+
+            </div>
+
+
+
+    
+    
+        </div>
+
+
+
+        
+
+
+       
+
+        
+
+
+    </div>
+
+
+
+
+
+
+
+</div>

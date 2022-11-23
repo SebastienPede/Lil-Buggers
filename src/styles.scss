@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.Carter{
+    font-family: 'Carter One', cursive;
+}
+
+
+
+
+//Typography styles
+
+.navText{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+
+.tinyText{
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+
+.text{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.mediumText{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+
+.smallTitle{
+    font-size: 2.3rem;
+    margin: 0;
+}
+
+.title{
+    font-size: 3rem;
+    margin: 0;
+}
+
+.bigTitle{
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+
+
+
+//Color swatch
+
+.text-white{
+    color: white;
+}
+
+
+.LBBlueBG{
+    background-color: #0082BF;
+}
+
+.LBBlue{
+    color: #0082BF;
+}

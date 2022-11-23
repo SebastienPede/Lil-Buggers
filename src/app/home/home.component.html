@@ -1,0 +1,472 @@
+<div class="d-flex flex-column justify-content-start align-items-center pt-5" style="min-height: 200vh;" >
+
+
+    <!--Hero Banner-->
+
+    <div class="d-flex flex-row justify-content-center align-items-center my-5 px-4 w-100">
+
+        <div class="d-flex flex-column justify-content-center align-items-start w-100 my-5 heroBanner p-5 rounded-5 shadow-lg" style="max-width: 1500px;">
+    
+            <!-- <h1 class="bigTitle Carter text-white mb-4 mt-5">Lil Buggers</h1> -->
+
+            <div class="mb-5" style="max-width: 500px;">
+    
+                <img class="img-fluid mb-5" src="assets/Branding/lilbuggersLOGO.png" alt="">
+        
+            </div>
+
+            <h4 class="mediumText text-white mb-5 " style="max-width:400px; margin-top: -200px; margin-left: 195px;">La meilleure variété de couches de haute qualité pour vos nouveau-nés.</h4>
+    
+        </div>
+    
+    </div>
+
+
+
+    <!--Nos Collection-->
+    <div class="d-flex flex-column justify-content-center align-items-start w-100 position-relative my-5 px-4" style="max-width: 1500px;">
+    
+        
+        <h1 class="title LBBlue Carter">Nos Collections</h1>
+
+        <hr class="w-100 LBBlueBG my-0 mb-4 " style="height: 3px; opacity: 1; border: none;">
+
+        <div class="row mx-0 w-100">
+
+            <div class="col-12 col-lg-8 p-2 position-relative ">
+
+
+
+                <div class="categoryTile d-flex flex-column p-2 shadow-lg" style="background-image: url('../../assets/Home/Image 77.jpg'); background-size: cover; background-position: center;">
+
+                    <!--spacer-->
+                    <div class="w-100 my-5 py-5"></div>
+
+                    <div class="w-100 d-flex flex-row justify-content-between align-items-end h-100">
+
+                        <h3 class="smallTitle LBBlue Carter">Polka Dots</h3>
+
+                        <div class="d-flex flex-row justify-content-center align-items-center">
+
+                            <img class="imageBadge mx-1" src="assets/Catalog/product_13.png" alt="">
+                            <img class="imageBadge mx-1" src="assets/Catalog/product_14.png" alt="">
+                            <img class="imageBadge mx-1" src="assets/Catalog/product_15.png" alt="">
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                
+
+            </div>
+
+            <div class="col-12 col-lg-4 p-2 position-relative ">
+
+                <div class="categoryTile d-flex flex-column p-2 shadow-lg" style="background-image: url('../../assets/Home/Image 78.jpg'); background-size: cover; background-position: center;">
+
+                    <!--spacer-->
+                    <div class="w-100 my-5 py-5"></div>
+
+                    <div class="w-100 d-flex flex-row justify-content-between align-items-end h-100">
+
+                        <h3 class="smallTitle LBBlue Carter">Silk</h3>
+
+                        <div class="d-flex flex-row justify-content-center align-items-center">
+
+                            <img class="imageBadge mx-1" src="assets/Catalog/product_9.png" alt="">
+                            
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                
+
+            </div>
+
+            <div class="col-12 col-lg-4 p-2 position-relative ">
+
+                <div class="categoryTile d-flex flex-column p-2 shadow-lg" style="background-image: url('../../assets/Home/Image 80.jpg'); background-size: cover; background-position: center;">
+
+                    <!--spacer-->
+                    <div class="w-100 my-5 py-5"></div>
+
+                    <div class="w-100 d-flex flex-row justify-content-between align-items-end h-100">
+
+                        <h3 class="smallTitle LBBlue Carter">Fall</h3>
+
+                        <div class="d-flex flex-row justify-content-center align-items-center">
+
+                            <img class="imageBadge mx-1" src="assets/Catalog/product_55.png" alt="">
+                            
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                
+
+            </div>
+
+            <div class="col-12 col-lg-8 p-2 position-relative ">
+
+                <div class="categoryTile d-flex flex-column p-2 shadow-lg" style="background-image: url('../../assets/Home/Image 81.jpg'); background-size: cover; background-position: center;">
+
+                    <!--spacer-->
+                    <div class="w-100 my-5 py-5"></div>
+
+                    <div class="w-100 d-flex flex-row justify-content-between align-items-end h-100">
+
+                        <h3 class="smallTitle LBBlue Carter">Cosmos</h3>
+
+                        <div class="d-flex flex-row justify-content-center align-items-center">
+
+                            <img class="imageBadge mx-1" src="assets/Catalog/product_48.png" alt="">
+                            <img class="imageBadge mx-1" src="assets/Catalog/product_52.png" alt="">
+                            <img class="imageBadge mx-1" src="assets/Catalog/product_57.png" alt="">
+
+                        </div>
+ 
+                    </div>
+
+
+                </div>
+
+                
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!--Produits En Vente-->
+    <div class="d-flex flex-column justify-content-center align-items-start w-100 position-relative my-5 px-4" style="max-width: 1500px;">
+    
+        
+        <h1 class="title LBBlue Carter">Produits En Vente</h1>
+
+        <hr class="w-100 LBBlueBG my-0 mb-4 " style="height: 3px; opacity: 1; border: none;">
+
+        <div class="row mx-auto w-100" style="max-width: 1250px;">
+
+            <div class="col-12 col-md-4 p-4 d-flex flex-row justify-content-center align-items-center" *ngFor="let product of saleProducts">
+
+                <div class="d-flex flex-column justify-content-between align-items-center w-100 border border-5 p-0 z-depth-2 shadow-lg rounded-bottom productTile h-100" style="max-width:300px">
+
+                    <img class="img-fluid my-4 productImage" src="{{product.product_image}}" alt="">
+
+                    <div class="d-flex flex-row justify-content-between align-items-start w-100 LBBlueBG p-3 rounded-bottom">
+
+                        <div class="d-flex flex-column justify-content-center align-items-start">
+
+                            <h4 class="mediumText text-white mb-3 position-relative">{{[product.name]}}</h4>
+
+                            <h4 class="text text-white mb-3">{{[product.sizes]}}</h4>
+
+
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-center align-items-end text-end ">
+
+                            <h4 class="mediumText Carter text-white mb-3">QTY: {{[product.qty]}}</h4>
+
+                            <h4 class="text text-white position-relative">
+                                
+                                {{[product.price]}} $
+
+                                <div class="position-absolute h-100 w-100 top-0 left-0">
+
+                                    <hr class="w-100 mb-0 mt-2" style="height: 2px; opacity: 1; border: none; transform: rotate(-10deg); background-color:red">
+
+                                </div>
+
+
+                            </h4>
+
+                            <h4 class="text text-white mt-2">{{[product.sale_price]}} $</h4>
+
+
+                        </div>
+
+                        
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+
+    </div>
+
+
+    <!--Nouveau Produits-->
+    <div class="d-flex flex-column justify-content-center align-items-start w-100 position-relative my-5 px-4" style="max-width: 1500px;">
+    
+        
+        <h1 class="title LBBlue Carter">Nouveaux Produits</h1>
+
+        <hr class="w-100 LBBlueBG my-0 mb-4 " style="height: 3px; opacity: 1; border: none;">
+
+        <div class="row mx-auto w-100" style="max-width: 1250px;">
+
+            <div class="col-12 col-md-4 p-4 d-flex flex-row justify-content-center align-items-center" *ngFor="let product of newProducts">
+
+                <div class="d-flex flex-column justify-content-between align-items-center w-100 border border-5 p-0 z-depth-2 shadow rounded-bottom productTile h-100" style="max-width:300px">
+
+                    <img class="img-fluid my-4 productImage" src="{{product.product_image}}" alt="">
+
+                    <div class="d-flex flex-row justify-content-between align-items-center w-100 LBBlueBG p-3 rounded-bottom">
+
+                        <div class="d-flex flex-column justify-content-center align-items-start">
+
+                            <h4 class="mediumText text-white mb-3">{{[product.name]}}</h4>
+
+                            <h4 class="text text-white mb-3">{{[product.sizes]}}</h4>
+
+
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-center align-items-end text-end ">
+
+                            <h4 class="mediumText Carter text-white mb-3">QTY: {{[product.qty]}}</h4>
+
+                            <h4 class="text text-white mb-3">{{[product.price]}} $</h4>
+
+
+                        </div>
+
+                        
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+
+    </div>
+
+
+    <!--Produits Populaires-->
+    <div class="d-flex flex-column justify-content-center align-items-start w-100 position-relative my-5 px-4" style="max-width: 1500px;">
+    
+        
+        <h1 class="title LBBlue Carter">Produits Populaires</h1>
+
+        <hr class="w-100 LBBlueBG my-0 mb-4 " style="height: 3px; opacity: 1; border: none;">
+
+        <div class="row mx-auto w-100" style="max-width: 1250px;">
+
+            <div class="col-12 col-md-4 p-4 d-flex flex-row justify-content-center align-items-center" *ngFor="let product of popularProducts">
+
+                <div class="d-flex flex-column justify-content-between align-items-center w-100 border border-5 p-0 z-depth-2 shadow rounded-bottom productTile h-100" style="max-width:300px">
+
+                    <img class="img-fluid my-4 productImage" src="{{product.product_image}}" alt="">
+
+                    <div class="d-flex flex-row justify-content-between align-items-center w-100 LBBlueBG p-3 rounded-bottom">
+
+                        <div class="d-flex flex-column justify-content-center align-items-start">
+
+                            <h4 class="mediumText text-white mb-3">{{[product.name]}}</h4>
+
+                            <h4 class="text text-white mb-3">{{[product.sizes]}}</h4>
+
+
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-center align-items-end  text-end">
+
+                            <h4 class="mediumText Carter text-white mb-3">QTY: {{[product.qty]}}</h4>
+
+                            <h4 class="text text-white mb-3">{{[product.price]}} $</h4>
+
+
+                        </div>
+
+                        
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+
+    </div>
+
+
+
+    <!--Resources éducationelles-->
+    <div class="d-flex flex-column justify-content-center align-items-start w-100 position-relative my-5 px-4" style="max-width: 1500px;">
+    
+        
+        <h1 class="title LBBlue Carter">Ressources éducatives</h1>
+
+        <hr class="w-100 LBBlueBG my-0 mb-4 " style="height: 3px; opacity: 1; border: none;">
+
+        <div class="row mx-auto w-100" style="max-width: 1200px;">
+
+            <div class="col-12 col-lg-4 p-4 d-flex flex-row justify-content-center align-items-center">
+
+                <div class="resourceTile d-flex flex-column p-2 shadow-lg border rounded-5 py-5 px-4 h-100" style="max-width: 300px; background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 99, 191, 0.814)), url('../../assets/Home/Image 72.jpg'); background-size: cover; background-position: center;">
+
+                    <!--spacer-->
+                    <div class="w-100 my-5 py-5"></div>
+
+                    <h2 class="mediumText text-white Carter text-left mt-5">
+                        Les meilleurs tissus 
+                        pour les couches de 
+                        votre bébé
+                    </h2>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="col-12 col-lg-4 p-4 d-flex flex-row justify-content-center align-items-center">
+
+                <div class="resourceTile d-flex flex-column p-2 shadow-lg border rounded-5 py-5 px-4 h-100" style="max-width: 300px; background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 99, 191, 0.814)), url('../../assets/Home/Image 69.jpg'); background-size: cover; background-position: center;">
+
+                    <!--spacer-->
+                    <div class="w-100 my-5 py-5"></div>
+
+                    <h2 class="mediumText text-white Carter text-left mt-5">
+                        Le confort de votre nouveau-née
+                    </h2>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="col-12 col-lg-4 p-4 d-flex flex-row justify-content-center align-items-center">
+
+                <div class="resourceTile d-flex flex-column p-2 shadow-lg border rounded-5 py-5 px-4 h-100" style="max-width: 300px; background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 99, 191, 0.814)), url('../../assets/Home/Image 71.jpg'); background-size: cover; background-position: center;">
+
+                    <!--spacer-->
+                    <div class="w-100 my-5 py-5"></div>
+
+                    <h2 class="mediumText text-white Carter text-left mt-5">
+                        comment les saisons affectent l'humeur de votre enfant
+                    </h2>
+
+
+                </div>
+
+
+            </div>
+
+            
+        </div>
+
+
+    </div>
+
+
+    <!--Contactez nous-->
+    <div class="d-flex flex-column justify-content-center align-items-start w-100 position-relative my-5 px-4" style="max-width: 1500px;">
+    
+        
+        <h1 class="title LBBlue Carter">Contactez-nous</h1>
+
+        <hr class="w-100 LBBlueBG my-0 mb-4 " style="height: 3px; opacity: 1; border: none;">
+
+        <div class="mx-auto d-flex flex-column justify-content-center align-items-center w-100 my-5" style="max-width: 750px;">
+        
+            <h1 class="Carter smallTitle text-center mb-5">Des questions sur nos produits ? 
+                Contactez-nous dès aujourd'hui ! </h1>
+
+                <div class="d-grid gap-2 w-100">
+
+                    <button class="btn btn-primary btn-lg" type="button">Entrez en contact</button>
+                    
+                </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!--Suivez nous-->
+    <div class="d-flex flex-column justify-content-center align-items-start w-100 position-relative my-5 px-4" style="max-width: 1500px;">
+    
+        
+        <h1 class="title LBBlue Carter">Suivez-nous</h1>
+
+        <hr class="w-100 LBBlueBG my-0 mb-4 " style="height: 3px; opacity: 1; border: none;">
+
+        <div class="mx-auto d-flex flex-column justify-content-center align-items-center w-100 my-5" style="max-width: 750px;">
+        
+            <h1 class="Carter smallTitle text-center mb-5">Des questions sur nos produits ? 
+                Contactez-nous dès aujourd'hui ! </h1>
+
+                <div class="d-grid gap-2 w-100">
+
+                    <button class="btn btn-primary btn-lg" type="button">Entrez en contact</button>
+                    
+                </div>
+
+        </div>
+
+
+    </div>
+    
+     
+    
+
+
+
+</div>
+
+
+
+
+
