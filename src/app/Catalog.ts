@@ -18,10 +18,10 @@ export const CATALOG: Product[] = [
     {name: 'Zebra', qty: 12, price: 25.99, sizes: ['xs','sm','lg'], product_image:'assets/Catalog/product_58.png', label:'new', collection:'none'},
 
     
-    {name: 'Lutin malin', qty: 10, price: 19.23, sizes: ['xs','sm','lg'], product_image:'assets/Catalog/product_9.png', label:'test', collection:'none'},
-    {name: 'Lutin malin', qty: 10, price: 19.23, sizes: ['xs','sm','lg'], product_image:'assets/Catalog/product_9.png', label:'none', collection:'none'},
-    {name: 'Lutin malin', qty: 10, price: 19.23, sizes: ['xs','sm','lg'], product_image:'assets/Catalog/product_9.png', label:'none', collection:'none'},
-    {name: 'Lutin malin', qty: 10, price: 19.23, sizes: ['xs','sm','lg'], product_image:'assets/Catalog/product_9.png', label:'none', collection:'none'},
+    // {name: 'Lutin malin', qty: 10, price: 19.23, sizes: ['xs','sm','lg'], product_image:'assets/Catalog/product_9.png', label:'test', collection:'none'},
+    // {name: 'Lutin malin', qty: 10, price: 19.23, sizes: ['xs','sm','lg'], product_image:'assets/Catalog/product_9.png', label:'none', collection:'none'},
+    // {name: 'Lutin malin', qty: 10, price: 19.23, sizes: ['xs','sm','lg'], product_image:'assets/Catalog/product_9.png', label:'none', collection:'none'},
+    // {name: 'Lutin malin', qty: 10, price: 19.23, sizes: ['xs','sm','lg'], product_image:'assets/Catalog/product_9.png', label:'none', collection:'none'},
 
     
 ]

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { faUser, faShoppingCart, faTimes, faMinus  } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faShoppingCart, faTimes, faMinus , faCheck } from '@fortawesome/free-solid-svg-icons';
 import { Observable } from 'rxjs';
 import { Product } from '../Product';
 import { CartService } from '../services/cart.service';
@@ -14,12 +14,17 @@ import { CatalogService } from '../services/catalog.service';
 })
 export class CheckoutComponent implements OnInit {
 
+
+  checked_out=false;
+
+
   userCart: Observable<Product[]>
 
   faUser = faUser
   faShoppingCart = faShoppingCart
   faTimes = faTimes
   faMinus = faMinus
+  faCheck = faCheck
 
 
   removeFromCart(product:Product){
@@ -39,6 +44,14 @@ export class CheckoutComponent implements OnInit {
     }
 
     return total
+
+  }
+
+
+  toggleCheckedOut(){
+
+    this.checked_out = !this.checked_out
+    this.cartService.clearCart()
 
   }
 

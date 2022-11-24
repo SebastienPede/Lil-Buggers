@@ -4,6 +4,8 @@ import { CatalogService } from '../services/catalog.service';
 
 import { faBan, faShoppingCart, faPlus, faMinus, faCheck } from '@fortawesome/free-solid-svg-icons';
 import { CartService } from '../services/cart.service';
+import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-catalog',
@@ -24,6 +26,8 @@ export class CatalogComponent implements OnInit {
   product_modal_status= 'selectQuantity'
 
 
+  fragmentSub:Subscription
+
 
   extendedProduct:Product
 
@@ -31,7 +35,7 @@ export class CatalogComponent implements OnInit {
 
   catalog : Product[] = []
 
-  constructor(private catalogService:CatalogService, private cartService:CartService) { }
+  constructor(private catalogService:CatalogService, private cartService:CartService, private route: ActivatedRoute) { }
 
 
   extendProduct(product:Product){
@@ -86,6 +90,23 @@ export class CatalogComponent implements OnInit {
 
     this.catalog = this.catalogService.getCatalog()
 
+    this.fragmentSub = this.route.fragment.subscribe(fragment => {
+
+      if(fragment){
+
+        this.extendProduct(this.catalogService.getProductByName(fragment))
+
+      }
+
+    
+    })
+
+
+  }
+
+
+  ngOnDestroy():void{
+    this.fragmentSub.unsubscribe()
   }
 
 }

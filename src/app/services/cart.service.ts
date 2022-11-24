@@ -27,10 +27,11 @@ export class CartService {
 
     this.cart.value.splice((this.cart.value).indexOf(product),1)
 
-    // console.log("This is the cart :", this.cart.value )
-    // console.log("This is the index of the item in cart ?? :",  (this.cart.value).indexOf(product) )
 
+  }
 
+  clearCart(){
+    this.cart.next([])
   }
 
   constructor() { }

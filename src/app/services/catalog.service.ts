@@ -51,5 +51,24 @@ export class CatalogService {
 
   }
 
+  getProductByName(name:string){
+
+
+    for(let i = 0 ; i < CATALOG.length ; i++){
+
+      if(CATALOG[i].name == name){
+
+        return CATALOG[i]
+        
+      }
+
+    }
+
+    return CATALOG[0]
+
+    
+
+  }
+
 
 }
