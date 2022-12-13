@@ -20,6 +20,10 @@ export class HomeComponent implements OnInit {
 
   constructor(private catalogService:CatalogService) { }
 
+  setDesiredCollection(collection:string){
+    this.catalogService.setDesiredCollection(collection)
+  }
+
   ngOnInit(): void {
 
 

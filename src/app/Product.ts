@@ -9,5 +9,6 @@ export class Product{
     product_image:string
     label:string
     collection:string
+    color:string
 
 }

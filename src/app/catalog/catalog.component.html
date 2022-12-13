@@ -32,7 +32,7 @@
 
         <div class="col px-2 py-4" style="max-width: 250px;">
         
-            <div class="accordion" id="accordionExample">
+            <div class="accordion mb-3" id="accordionExample">
 
             
                 
@@ -46,91 +46,102 @@
                     <div class="accordion-body">
 
                         <div class="form-check my-2">
-                            <input class="form-check-input" type="checkbox" value="" id="silk">
-                            <label class="form-check-label" for="silk">
-                                Silk
+                            <input class="form-check-input" type="checkbox" value="Christmas" id="Christmas" (click)="toggleCollection('Christmas')">
+                            <label class="form-check-label" for="Christmas">
+                                Christmas
                             </label>
                         </div>
 
                         <div class="form-check my-2">
-                            <input class="form-check-input" type="checkbox" value="" id="polka_dots">
-                            <label class="form-check-label" for="polka_dots">
+                            <input class="form-check-input" type="checkbox" value="Cosmos" id="Cosmos" (click)="toggleCollection('Cosmos')">
+                            <label class="form-check-label" for="Cosmos">
+                                Cosmos
+                            </label>
+                        </div>
+
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Denim" id="Denim" (click)="toggleCollection('Denim')">
+                            <label class="form-check-label" for="Denim">
+                                Denim
+                            </label>
+                        </div>
+
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Dinosaur" id="Dinosaur" (click)="toggleCollection('Dinosaur')">
+                            <label class="form-check-label" for="Dinosaur">
+                                Dinosaur
+                            </label>
+                        </div>
+
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Fall" id="Fall" (click)="toggleCollection('Fall')">
+                            <label class="form-check-label" for="Fall">
+                                Fall
+                            </label>
+                        </div>
+
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Flowers" id="Flowers" (click)="toggleCollection('Flowers')">
+                            <label class="form-check-label" for="Flowers">
+                                Flowers
+                            </label>
+                        </div>
+
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Summer" id="Summer" (click)="toggleCollection('Summer')">
+                            <label class="form-check-label" for="Summer">
+                                Summer
+                            </label>
+                        </div>
+
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Matte" id="Matte" (click)="toggleCollection('Matte')">
+                            <label class="form-check-label" for="Matte">
+                                Matte
+                            </label>
+                        </div>
+
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Ocean" id="Ocean" (click)="toggleCollection('Ocean')">
+                            <label class="form-check-label" for="Ocean">
+                                Ocean
+                            </label>
+                        </div>
+
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Polka Dots" id="Polka Dots" (click)="toggleCollection('Polka Dots')">
+                            <label class="form-check-label" for="Polka Dots">
                                 Polka Dots
                             </label>
                         </div>
 
                         <div class="form-check my-2">
-                            <input class="form-check-input" type="checkbox" value="" id="fall">
-                            <label class="form-check-label" for="fall">
-                                Fall
+                            <input class="form-check-input" type="checkbox" value="Premium" id="Premium" (click)="toggleCollection('Premium')">
+                            <label class="form-check-label" for="Premium">
+                                Premium
                             </label>
                         </div>
 
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Prestige" id="Prestige" (click)="toggleCollection('Prestige')">
+                            <label class="form-check-label" for="Prestige">
+                                Prestige
+                            </label>
+                        </div>
+
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Silk" id="Silk" (click)="toggleCollection('Silk')">
+                            <label class="form-check-label" for="Silk">
+                                Silk
+                            </label>
+                        </div>
+
+                       
 
                       
                     </div>
                   </div>
                 </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#price" aria-expanded="true" aria-controls="collapseOne">
-                        Prix
-                      </button>
-                    </h2>
-                    <div id="price" class="accordion-collapse collapse show" aria-labelledby="headingOne">
-                      <div class="accordion-body">
-  
-                        <div class="form-check my-2">
-                              <input class="form-check-input" type="checkbox" value="" id="range_1">
-                              <label class="form-check-label" for="range_1">
-                                  < 10$
-                              </label>
-                        </div>
-
-                        <div class="form-check my-2">
-                            <input class="form-check-input" type="checkbox" value="" id="range_2">
-                            <label class="form-check-label" for="range_2">
-                                10$ à 15$
-                            </label>
-                        </div>
-
-
-                        <div class="form-check my-2">
-                            <input class="form-check-input" type="checkbox" value="" id="range_3">
-                            <label class="form-check-label" for="range_3">
-                                15$ à 20$
-                            </label>
-                        </div>
-
-
-                        <div class="form-check my-2">
-                            <input class="form-check-input" type="checkbox" value="" id="range_4">
-                            <label class="form-check-label" for="range_4">
-                                20$ à 25$
-                            </label>
-                        </div>
-
-
-                        <div class="form-check my-2">
-                            <input class="form-check-input" type="checkbox" value="" id="range_5">
-                            <label class="form-check-label" for="range_5">
-                                > 25$
-                            </label>
-                        </div>
-
-
-                       
-                        
-  
-                          
-  
-  
-                        
-                      </div>
-                    </div>
-                </div>
-
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
@@ -142,41 +153,34 @@
                       <div class="accordion-body">
   
                           <div class="form-check my-2">
-                              <input class="form-check-input" type="checkbox" value="" id="xs">
+                              <input class="form-check-input" type="checkbox" value="" id="xs" (click)="toggleSize('xs')">
                               <label class="form-check-label" for="xs">
                                   Très petit
                               </label>
                           </div>
   
                           <div class="form-check my-2">
-                              <input class="form-check-input" type="checkbox" value="" id="sm">
+                              <input class="form-check-input" type="checkbox" value="" id="sm" (click)="toggleSize('sm')">
                               <label class="form-check-label" for="sm">
                                   Petit
                               </label>
                           </div>
   
                           <div class="form-check my-2">
-                              <input class="form-check-input" type="checkbox" value="" id="md">
+                              <input class="form-check-input" type="checkbox" value="" id="md" (click)="toggleSize('md')">
                               <label class="form-check-label" for="md">
                                   Moyen
                               </label>
                           </div>
 
                           <div class="form-check my-2">
-                            <input class="form-check-input" type="checkbox" value="" id="lg">
+                            <input class="form-check-input" type="checkbox" value="" id="lg" (click)="toggleSize('lg')">
                             <label class="form-check-label" for="lg">
                                 Grand
                             </label>
                         </div>
 
-                        <div class="form-check my-2">
-                            <input class="form-check-input" type="checkbox" value="" id="xl">
-                            <label class="form-check-label" for="xl">
-                                Très grand
-                            </label>
-                        </div>
-  
-  
+                    
                         
                       </div>
                     </div>
@@ -191,72 +195,90 @@
                     </h2>
                     <div id="colors" class="accordion-collapse collapse show" aria-labelledby="headingOne">
                       <div class="accordion-body">
+
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Blanc" id="Blanc" (click)="toggleColor('blanc')">
+                            <label class="form-check-label" for="Blanc">
+                              Blanc
+                            </label>
+                         </div>
   
                         <div class="form-check my-2">
-                              <input class="form-check-input" type="checkbox" value="" id="blue">
-                              <label class="form-check-label" for="blue">
+                              <input class="form-check-input" type="checkbox" value="Bleu" id="Bleu" (click)="toggleColor('bleu')">
+                              <label class="form-check-label" for="Bleu">
                                 Bleu
                               </label>
                         </div>
 
                         <div class="form-check my-2">
-                            <input class="form-check-input" type="checkbox" value="" id="violet">
-                            <label class="form-check-label" for="violet">
-                                Violet
-                            </label>
-                        </div>
-
-                        <div class="form-check my-2">
-                            <input class="form-check-input" type="checkbox" value="" id="vert">
-                            <label class="form-check-label" for="vert">
-                                Vert
-                            </label>
-                        </div>
-
-                        <div class="form-check my-2">
-                            <input class="form-check-input" type="checkbox" value="" id="jaune">
-                            <label class="form-check-label" for="jaune">
-                                Jaune
-                            </label>
-                        </div>
-
-                        <div class="form-check my-2">
-                            <input class="form-check-input" type="checkbox" value="" id="rouge">
-                            <label class="form-check-label" for="rouge">
-                                Rouge
-                            </label>
-                        </div>
-
-                        <div class="form-check my-2">
-                            <input class="form-check-input" type="checkbox" value="" id="rose">
-                            <label class="form-check-label" for="rose">
-                                Rose
-                            </label>
-                        </div>
-
-                        
-
-                        <div class="form-check my-2">
-                            <input class="form-check-input" type="checkbox" value="" id="brun">
-                            <label class="form-check-label" for="brun">
+                            <input class="form-check-input" type="checkbox" value="Brun" id="Brun" (click)="toggleColor('brun')">
+                            <label class="form-check-label" for="Brun">
                                 Brun
                             </label>
                         </div>
 
                         <div class="form-check my-2">
-                            <input class="form-check-input" type="checkbox" value="" id="blanc">
-                            <label class="form-check-label" for="blanc">
-                                Blanc
+                            <input class="form-check-input" type="checkbox" value="Gris" id="Gris" (click)="toggleColor('gris')">
+                            <label class="form-check-label" for="Gris">
+                                Gris
                             </label>
                         </div>
 
                         <div class="form-check my-2">
-                            <input class="form-check-input" type="checkbox" value="" id="noir">
-                            <label class="form-check-label" for="noir">
+                            <input class="form-check-input" type="checkbox" value="Jaune" id="Jaune" (click)="toggleColor('jaune')">
+                            <label class="form-check-label" for="Jaune">
+                                Jaune
+                            </label>
+                        </div>
+
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Noir" id="Noir" (click)="toggleColor('noir')">
+                            <label class="form-check-label" for="Noir">
                                 Noir
                             </label>
                         </div>
 
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Orange" id="Orange" (click)="toggleColor('orange')">
+                            <label class="form-check-label" for="Orange">
+                                Orange
+                            </label>
+                        </div>
+
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Rose" id="Rose" (click)="toggleColor('rose')">
+                            <label class="form-check-label" for="Rose">
+                                Rose
+                            </label>
+                        </div>
+
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Rouge" id="Rouge" (click)="toggleColor('rouge')">
+                            <label class="form-check-label" for="Rouge">
+                                Rouge
+                            </label>
+                        </div>
+
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Turquoise" id="Turquoise" (click)="toggleColor('turquoise')">
+                            <label class="form-check-label" for="Turquoise">
+                                Turquoise
+                            </label>
+                        </div>
+
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Vert" id="Vert" (click)="toggleColor('vert')">
+                            <label class="form-check-label" for="Vert">
+                                Vert
+                            </label>
+                        </div>
+
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" value="Violet" id="Violet" (click)="toggleColor('violet')">
+                            <label class="form-check-label" for="Violet">
+                                Violet
+                            </label>
+                        </div>
                           
   
                           
@@ -266,47 +288,11 @@
                       </div>
                     </div>
                 </div>
-
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#other" aria-expanded="true" aria-controls="collapseOne">
-                        Autres
-                      </button>
-                    </h2>
-                    <div id="other" class="accordion-collapse collapse show" aria-labelledby="headingOne">
-                      <div class="accordion-body">
-  
-                          <div class="form-check my-2">
-                              <input class="form-check-input" type="checkbox" value="" id="sale">
-                              <label class="form-check-label" for="sale">
-                                  En Vente
-                              </label>
-                          </div>
-  
-                          <div class="form-check my-2">
-                              <input class="form-check-input" type="checkbox" value="" id="new">
-                              <label class="form-check-label" for="new">
-                                  Nouveau
-                              </label>
-                          </div>
-  
-                          <div class="form-check my-2">
-                              <input class="form-check-input" type="checkbox" value="" id="popular">
-                              <label class="form-check-label" for="popular">
-                                  Populaire
-                              </label>
-                          </div>
-  
-  
-                        
-                      </div>
-                    </div>
-                </div>
-
 
                 
             </div>
+
+            <button class="btn btn-primary btn-lg w-100 " type="button" [disabled]="!filterIsDirty()" (click)="clearFilters()" > Effacer le filtre <fa-icon [icon]="faTrash" class="ms-2"  style="color: white; font-size: 1.2rem;" ></fa-icon></button>
 
 
 
@@ -459,9 +445,9 @@
 
 
 
-        <h1 class="smallTitle text-center Carter mb-4" style="max-width: 500px;">Le produit a été ajouté à votre panier</h1>
+        <h1 class="smallTitle text-center Carter mb-4" style="max-width: 500px;">Le produit a été ajouté à votre panier!</h1>
 
-        <button class="btn btn-success btn-lg w-100  mx-2" type="button" style="max-width: 400px;" (click)="toggleProductModal()" >Daccord ! <fa-icon [icon]="faCheck" class="ms-2"  style="color: white; font-size: 1.2rem;" ></fa-icon></button>
+        <button class="btn btn-success btn-lg w-100  mx-2" type="button" style="max-width: 400px;" (click)="toggleProductModal()" > Fermer <fa-icon [icon]="faCheck" class="ms-2"  style="color: white; font-size: 1.2rem;" ></fa-icon></button>
         
 
 

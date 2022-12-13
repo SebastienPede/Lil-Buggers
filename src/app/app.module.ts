@@ -10,6 +10,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ResourcesComponent } from './resources/resources.component';
 import { ContactComponent } from './contact/contact.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { AccountComponent } from './account/account.component';
+
+//Reactive Forms
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +23,14 @@ import { CheckoutComponent } from './checkout/checkout.component';
     NavigationComponent,
     ResourcesComponent,
     ContactComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

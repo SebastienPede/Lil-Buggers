@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { faUser, faShoppingCart, faTimes, faMinus , faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faShoppingCart, faTimes, faMinus , faCheck, faBaby } from '@fortawesome/free-solid-svg-icons';
 import { Observable } from 'rxjs';
 import { Product } from '../Product';
 import { CartService } from '../services/cart.service';
@@ -25,6 +25,7 @@ export class CheckoutComponent implements OnInit {
   faTimes = faTimes
   faMinus = faMinus
   faCheck = faCheck
+  faBaby = faBaby
 
 
   removeFromCart(product:Product){
